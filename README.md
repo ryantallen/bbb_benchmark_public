@@ -80,6 +80,8 @@ Notes:
 
 ```
 bbb_benchmark_public/
+├── docs/
+│   └── index.html                # Results website (GitHub Pages source)
 ├── simulation/
 │   ├── backbay_main.py           # Main experiment driver (edit configurations here)
 │   ├── backbay_driver.py         # Selenium automation of yearly decisions
@@ -163,6 +165,15 @@ If you have permission to use it, place it at one of:
 
 - `analysis/data/past_mba_performance.csv`
 - `analysis/inputs/past_mba_performance.csv`
+
+## Host the results site (GitHub Pages)
+
+The `docs/` folder contains a self-updating `index.html` that pulls the latest images directly from your GitHub repository. To host it:
+
+1.  **Push** your changes (including the `analysis/figures/` images) to GitHub.
+2.  Go to your repo **Settings > Pages**.
+3.  Under **Build and deployment > Branch**, select `main` (or your primary branch) and set the folder to `/docs`.
+4.  Click **Save**. Your site will be live at `https://<your-username>.github.io/bbb_benchmark_public/`.
 
 ## Troubleshooting
 
