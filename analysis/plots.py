@@ -55,11 +55,11 @@ SUPTITLE_Y                 = 0.985
 LEGEND_Y                   = 0.955
 SUBPLOTS_TOP               = 0.86
 SUBPLOTS_LEFT              = 0.1
-SUBPLOTS_RIGHT             = 0.92
-SUBPLOTS_BOTTOM_COMPOSITE  = 0.25
-SUBPLOTS_BOTTOM_2X2        = 0.16
-GRID_HSPACE                = 0.58
-GRID_WSPACE                = 0.25
+SUBPLOTS_RIGHT             = 0.95
+SUBPLOTS_BOTTOM_COMPOSITE  = 0.3
+SUBPLOTS_BOTTOM_2X2        = 0.2
+GRID_HSPACE                = 0.72
+GRID_WSPACE                = 0.3
 
 TOP_ROW_XROT   = 35
 BOTTOM_ROW_XROT= 45
@@ -750,7 +750,7 @@ def plot_composite_vs_gpqa(df: pd.DataFrame, outpath: str):
         stats["mean"],
         stats["model_canon"].apply(short_model_label),
         x_bin=5,
-        y_step_pts=10,
+        y_step_pts=15,
         xpad_pts=6
     )
 
