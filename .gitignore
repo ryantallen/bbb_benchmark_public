@@ -1,0 +1,18 @@
+# Environment files
+.env
+
+# Human/MBA historical performance files (not authorized for public release)
+analysis/data/past_mba_performance.csv
+analysis/inputs/past_mba_performance.csv
+analysis/inputs/data/past_mba_performance.csv
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+
+# Ignore any directory named "~Archive" anywhere in the tree
+**/~Archive/
+logs/
+raw_results/
